@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:text=" "
+        android:textSize="150sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAgenda"
+        android:layout_width="190px"
+        android:layout_height="100px"
+        android:layout_above="@+id/btnValor"
+        android:layout_alignLeft="@+id/btnSair"
+        android:gravity="center"      
+        android:background="@drawable/icon_agenda"/>
+
+    <Button
+        android:id="@+id/btnDesenvolvedor"
+        android:layout_width="190px"
+        android:layout_height="100px"
+        android:layout_alignBaseline="@+id/btnSobre"
+        android:layout_alignBottom="@+id/btnSobre"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/btnSobre"
+        android:gravity="center"
+        android:background="@drawable/icon_desenvolvedor" />
+
+    <Button
+        android:id="@+id/btnValor"
+        android:layout_width="190px"
+        android:layout_height="100px"
+        android:layout_alignRight="@+id/btnDesenvolvedor"
+        android:layout_below="@+id/btnCadastro"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/icon_valor"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="190px"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/btnValor"
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/icon_cad2"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnSobre"
+        android:layout_width="180px"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnSair"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/icon_sobre"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="180px"
+        android:layout_height="100px"
+        android:layout_alignBaseline="@+id/btnValor"
+        android:layout_alignBottom="@+id/btnValor"
+        android:layout_alignLeft="@+id/btnSobre"
+        android:background="@drawable/icon_sair"
+        android:gravity="center" />
+
+</RelativeLayout>
